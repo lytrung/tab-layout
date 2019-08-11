@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state={
-      activeKey:'all'
+      activeKey:'politics'
     }
   }
 
@@ -29,7 +29,7 @@ class App extends Component {
               
               <Nav variant="pills" className="col-7">
                 <Nav.Item>
-                  <Nav.Link eventKey="all">All</Nav.Link>
+                  <Nav.Link eventKey="politics">Politics</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="business">Businsess</Nav.Link>
@@ -54,8 +54,8 @@ class App extends Component {
 
             
             <Tab.Content>
-              <Tab.Pane className="tab-pane" eventKey="all">
-                <h1>All</h1>
+              <Tab.Pane className="tab-pane" eventKey="politics">
+                <h1>Politics</h1>
 
                 <div className="articles">
 
@@ -100,6 +100,12 @@ class App extends Component {
 
               <Tab.Pane className="tab-pane" eventKey="search">
                 <h1>Search Results</h1>
+
+                <div className="article">
+                  <h5>Apple is giving out a special iPhone that can lead to a $1 million reward</h5>
+                  <p><span class="badge badge-primary">Phonearena.com</span></p>
+                </div>
+                
               </Tab.Pane>
 
             </Tab.Content>
